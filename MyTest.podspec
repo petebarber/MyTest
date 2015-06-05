@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "MyTest"
   s.version      = "0.0.1"
-  s.summary      = "A short description of MyTest."
+  s.summary      = "Just a quick pod test."
 
   s.description  = <<-DESC
                    A longer description of MyTest in Markdown format.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "http://EXAMPLE/MyTest"
+  s.homepage     = "http://www.foobar.talktalk.net"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,8 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -64,7 +63,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
+  s.platform     = :ios, "8.0"
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms

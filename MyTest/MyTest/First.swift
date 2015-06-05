@@ -9,6 +9,11 @@ import Foundation
 
 public class First
 {
+	public init()
+	{
+		
+	}
+	
 	public func f() -> String
 	{
 		return "Hello, world"

@@ -13,6 +13,7 @@
 		C1AA2B9F1B2230DF007F2188 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1AA2B9E1B2230DF007F2188 /* Images.xcassets */; };
 		C1AA2BA21B2230DF007F2188 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1AA2BA01B2230DF007F2188 /* LaunchScreen.xib */; };
 		C1AA2BAE1B2230DF007F2188 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA2BAD1B2230DF007F2188 /* ExampleTests.swift */; };
+		C1AA2BEB1B223B02007F2188 /* MyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AA2BE61B223AAB007F2188 /* MyTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +23,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = C1AA2B911B2230DF007F2188;
 			remoteInfo = Example;
+		};
+		C1AA2BE51B223AAB007F2188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1AA2BE01B223AAB007F2188 /* MyTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C1AA2BC21B22323A007F2188;
+			remoteInfo = MyTest;
+		};
+		C1AA2BE71B223AAB007F2188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1AA2BE01B223AAB007F2188 /* MyTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C1AA2BCD1B22323A007F2188;
+			remoteInfo = MyTestTests;
+		};
+		C1AA2BE91B223AF6007F2188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1AA2BE01B223AAB007F2188 /* MyTest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C1AA2BC11B22323A007F2188;
+			remoteInfo = MyTest;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +58,7 @@
 		C1AA2BA71B2230DF007F2188 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AA2BAC1B2230DF007F2188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1AA2BAD1B2230DF007F2188 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
+		C1AA2BE01B223AAB007F2188 /* MyTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyTest.xcodeproj; path = ../MyTest/MyTest.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1AA2BEB1B223B02007F2188 /* MyTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +83,7 @@
 		C1AA2B891B2230DF007F2188 = {
 			isa = PBXGroup;
 			children = (
+				C1AA2BE01B223AAB007F2188 /* MyTest.xcodeproj */,
 				C1AA2B941B2230DF007F2188 /* Example */,
 				C1AA2BAA1B2230DF007F2188 /* ExampleTests */,
 				C1AA2B931B2230DF007F2188 /* Products */,
@@ -112,6 +137,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C1AA2BE11B223AAB007F2188 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA2BE61B223AAB007F2188 /* MyTest.framework */,
+				C1AA2BE81B223AAB007F2188 /* MyTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +160,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C1AA2BEA1B223AF6007F2188 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -179,6 +214,12 @@
 			mainGroup = C1AA2B891B2230DF007F2188;
 			productRefGroup = C1AA2B931B2230DF007F2188 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C1AA2BE11B223AAB007F2188 /* Products */;
+					ProjectRef = C1AA2BE01B223AAB007F2188 /* MyTest.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C1AA2B911B2230DF007F2188 /* Example */,
@@ -186,6 +227,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C1AA2BE61B223AAB007F2188 /* MyTest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyTest.framework;
+			remoteRef = C1AA2BE51B223AAB007F2188 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C1AA2BE81B223AAB007F2188 /* MyTestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyTestTests.xctest;
+			remoteRef = C1AA2BE71B223AAB007F2188 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C1AA2B901B2230DF007F2188 /* Resources */ = {
@@ -232,6 +290,11 @@
 			isa = PBXTargetDependency;
 			target = C1AA2B911B2230DF007F2188 /* Example */;
 			targetProxy = C1AA2BA81B2230DF007F2188 /* PBXContainerItemProxy */;
+		};
+		C1AA2BEA1B223AF6007F2188 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MyTest;
+			targetProxy = C1AA2BE91B223AF6007F2188 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
